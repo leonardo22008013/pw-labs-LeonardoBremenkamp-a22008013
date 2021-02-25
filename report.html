@@ -1,3 +1,109 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Página report</title>
+</head>
+<body>
+    <background-color: #082767;>
+    <font face="Arial">
+                <h1> Página Web Report </h1>
+                <p>Com base nas observações feitas durante a execução do primeiro lab de programação web irei reportar abaixo as anotações feitas:</a> 
+                <ol>
+                    <h2><li>Alojamento de página Web na cloud</li></h2>
+                        <ul>
+                            <li>Depois de ter criado meu <a href="https://github.com/leonardo22008013/pw-lab1">repositório</a> no Git Hub e feito o deploy no Heroku temos aqui a minha <a href="https://pw-laboratorio1.herokuapp.com/">Primeira Página</a></li>
+                        </ul>
+                    
+                    <h2><li>Conhecer a Internet</li></h2>
+                        <ul>
+                            <h3><li>Endereço de IP</li></h3>
+                                <ul>
+                                    <li>A partir da página <a href="https://whatismyipaddress.com/">https://whatismyipaddress.com/</a> obtive o endreço <b> 87.196.72.228</b>, localizado em:</li>
+                                        <br>
+                                            <center>
+                                            <img src="img/MyIPLocation.png" alt="Minha localização" border = "1">
+                                            </center>
+                                        
+                                    <li>Da mesma forma mencionada acima, já agora utilizando uma outra ferramenta complementar <a href="https://ipinfo.info/html/ip_checker.php">https://ipinfo.info/html/ip_checker.php</a> para obter o endereço IP da página Web criada, obtive <b>34.246.252.198</b></b> onde tem servidor fixado em:</li> 
+                                        <br>
+                                            <center>
+                                                <img src="img/MyDomainIPMAP.png" alt="Servidor localização" border = "1">
+                                            </center>
+                                </ul> 
+                            <h3><li>Percurso</li></h3>  
+                                <ul>
+                                    <li>Utilizando a ferramenta GeoTraceroute, Em <a href ="https://geotraceroute.com/">https://geotraceroute.com/</a> podemos visualizar graficamente por onde passam os pacotes IP, até chegar a minha <a href="https://pw-laboratorio1.herokuapp.com/">Primeira Página</a></li>
+                                    <br>
+                                            <center>
+                                                <img src="img/GloboGeo.png" alt="Saltos" height="400" width="400" border = "1">
+                                            </center>                             
+                                    
+                                    <li>Foram realizados três saltos de meu IP adress até ao endereço do servidor de minha <a href="https://pw-laboratorio1.herokuapp.com/">Primeira Página</a></li> 
+                                        <ol>
+                                            <br>
+                                                <li> PT - <b> Prior Velho </b> <img src="img/bandeira-de-portugal-1.png" alt="Bandeira portuguesa" width="15" height="15" border = "1"></li>
+                                            <br>
+                                                <li> PT - <b> Lisboa </b> <img src="img/bandeira-de-portugal-1.png" alt="Bandeira portuguesa" width="15" height="15" border = "1"></li>
+                                            <br>    
+                                                <li> PT - <b> Frankfurt </b> <img src="img/bandeira-alemanha.png" alt="Bandeira Alemã" width="15" height="15" border = "1"></li>
+                                        </ol>
+                                </ul> 
+                        </ul>
+
+                        <h2><li>Acesso via HTTP à minha página Web</li></h2>
+                            <ul>
+                                <h3><li>HTTP</li></h3>
+                                    
+                                <P>Após inserir a <i>URL</i> de minha página no brownser, será feito enviado ao servidor Web um pedido do conteúdo correspondente a esse <i>ULR</i> e assim podemos verificar o
+                                código fonte com o comando CTRL + U</P>
+                                        
+                                <center>
+                                        
+                                    <img src="img/Source.png" alt="Código fonte portuguesa" width="1290" height="500" border = "1">
+                                        
+                                </center>
+                                
+                                <h3><li>Inspect</li></h3>
+
+                                <P>Após os passos anteriores e ainda dentro da página, foi utilizado o comando Ctrl + Shift + i, e já dentro do <i>brownser delevoper tool</i> selecionado
+                                a aba <i>network</i> onde podemos observar que ela oferece informações sobre os recursos que são utilizados pela página em tempo real,
+                                nesse caso podemos ver que são baixados um arquivo PNG e um outro contendo o domínio da página.</P>
+                                    <center>
+                                            
+                                        <img src="img/infoPrimeiraPagina.png" alt="inspect fonte " width="500" height="400" border = "1">
+                                        <figcaption >São descarregados 2 arquivos</figcaption>
+
+                                    </center>
+
+                                <p>Já agora para cada arquivo podemos fazer um inspect mais a fundo</p>
+                                    <ul>
+                                        <h3><li>Preview</li></h3>
+                                            <p>Exibe uma pré-visualização da página</p>
+                                                <img src = "img/PreviewPrimeira.png" border = "1" alt = "PreviewPP" height="350" width="500">
+                                                <figcaption>Preview primeira página</figcaption>
+                                                <img src = "img/PreviewSegunda.png" border = "1" alt = "PreviewSP" height="350" width="500">
+                                                <figcaption>Preview segunda página</figcaption>
+                                        <h3><li>Headers</li></h3>
+                                                <p>Exibe-se informações, como url, status e outras informações sobre comunicação da página.</p>
+                                                <img src = "img/headerPrimeira.png" border = "1" alt = "HeaderPP" height="350" width="500">
+                                                <figcaption>Header primeira página</figcaption>
+                                                <img src = "img/HeaderSegunda.png" border = "1" alt = "HeaderSP" height="350" width="500">
+                                                <figcaption>Header segunda página</figcaption>
+                                        <h3><li>Timing</li></h3>
+                                                <p>Exibe os tempos de carregamento para cada arquivo </p>
+                                                <img src = "img/timmingPrimeira.png" border = "1" alt = "TimingPP" height="350" width="500">
+                                                <figcaption>Timing primeira página</figcaption>
+                                                <img src = "img/TimmingSegunda.png" border = "1" alt = "TimingSP" height="350" width="500">
+                                                <figcaption>Timing segunda página</figcaption>
+                                    </ul>
+                                
+                            </ul>    
+                </ol>
+            </font>
+</body>
+=======
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -87,4 +193,5 @@
                 </ul>    
     </ol>
 </body>
+>>>>>>> 04f32f61f89e02e3c8659f23776e8499d919365c
 </html>
