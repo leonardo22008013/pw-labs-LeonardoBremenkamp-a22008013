@@ -11,7 +11,8 @@
     <!--Web Site criado em html, para fins de treinamento-->
 </head>
 
-<body style="background-color:rgb(235, 253, 244)">
+<body style="background-color:rgb(235, 253, 244)" margin : 0 *box-sizing: border-box>
+
     <h1>Santa Teresa</h1>
     <img src="images/ST-FAVICON.jpg" alt="Santa Teresa - ES">
     <br>
@@ -23,38 +24,43 @@
     <a href="./quizz.html">Quizz</a>
     <a href="./comentarios.html">Comentários</a>
 
-    <h3>Introdução</h3>
+    <h3>Comentários</h3>
 
-    <p>Município cercado pelas montanhas da Região Serrana, Santa Teresa está entre os destinos turísticos mais
-        importantes do Espírito Santo.
-        Cultura marcante, patrimônio ambiental e cultural preservados, clima de montanha, gastronomia e vocação rural
-        são os principais atrativos da cidade.
-        Com cerca de 40% de seu território coberto por Mata Atlântica preservada, destaca-se por ter uma das mais
-        exuberantes biodiversidades do mundo.
-        Terra dos beija-flores, das orquídeas e de Augusto Ruschi, patrono da Ecologia no Brasil. É berço da colonização
-        italiana no Brasil e teve sua história
-        iniciada em 1874. Para completar, é o maior produtor de uva e vinho do Estado, além de ser a capital capixaba do
-        <i>Jazz</i>e do <i>Blues</i>.</p>
+    <p>Ajude-nos a melhorar o site, sua opinião será sempre bem vinda!!!</p>
 
-    <p>&#127863 &#127930 &#127795 &#127829 </p>
 
-    <hr>
+    <form method="POST" action="leonardo.bdoc.pt@gmail.com">
+        <fieldset>
+            <label>Indique abaixo qual o grau de clareza do conteúdo apresentado no site</label><br><br>
 
-    <p>O cálice de vinho representa a produção de vinhos na cidade que mantém acesa a herança deixada pelos antepassados
-        italianos, o trompeteserve como referência para o musical de jazz
-        e blues realizado anualmente no estado, a árvore apesar de ter posto somente uma, ilustra a constante luta pela
-        preservação da mata atlântica no Pais e para terminar, não poderia
-        deixar passar em branco algo que é presente na cultura de qualquer povo, a comida!!!, nesse caso coloquei a
-        pizza porque é conhecida mundialmente e nos diz muito sobre os italianos.
+            <label>Muito claro</label>
+            <input type="radio" name="clareza" id="clareza"><br><br>
+            <label>Nem por isso</label>
+            <input type="radio" name="clareza" id="clareza"><br><br>
+            <label>Poderia ser melhor</label>
+            <input type="radio" name="clareza" id="clareza"><br><br><br><br>
 
-    <ol>
-        <li>Um pouco da <a href="index.html">história</a> de Santa Teresa</li>
-        <li>Como <a href="local.html">encontrar</a> a terra dos beija-flores</li>
-        <li>Mais informações<a href="multimedia.html"> aqui</a></li>
 
-    </ol>
 
-    <img src="images/wordcloud.jpg" alt="WorldCloud">
+            <label>Foi identificado algum bug por vossa parte? Se sim indique a parte.</label><br><br>
+            <label>Sim</label>
+            <input type="radio" name="bugs" id="bug"><br><br>
+            <label>Não</label>
+            <input type="radio" name="bugs" id="bug"><br><br>
+            <textarea name="bugs" rows="4" cols="10"
+                style="width:200px; height:100px;">Indique em qual parte foi encontrado o bug...</textarea><br><br>
+
+            <label>Quanto a relevância do conteúdo, indique um valor de 0 a 10</label><br><br>
+            <input type="range" min="0" max="10" name="taxa" value="0" oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">0</output> <br><br>
+
+            <textarea name="opnion" rows="10" cols="30"
+                style="width:400px; height:150px;">Deixe aqui um comentário...</textarea><br><br>
+
+
+            <input type="submit" alt="submit" value="Submeter">
+        </fieldset>
+    </form>
 
 </body>
 

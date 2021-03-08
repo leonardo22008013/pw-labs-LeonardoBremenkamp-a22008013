@@ -25,35 +25,43 @@
 
     <h3>Quizz</h3>
 
-    <form>
+    <form method="POST" action="leonardo.bdoc.pt@gmail.com" >
+        <fieldset>
+            <legend align = "center">Insira suas informações</legend>
+        
         <label for="Nome">Nome</label>
-        <input type="Text" name="Nome" placeholder="Nome">
+        <input type="Text" name="Nome" placeholder="Nome" autocomplete="on" size ="15" maxlength = "15" autofocus>
         <br><br>
         <label for="Apelido">Apelido</label>
-        <input type="Text" name="Apelido" placeholder="Apelido">
+        <input type="Text" name="Apelido" placeholder="Apelido" autocomplete="on" size="15" maxlength = "15" autofocus><br><br>
+        <label for="quantity">Idade</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="99" step="1">
         <br><br>
         <label for="E-mail">E-mail</label>
-        <input type="Text" name="e-mail" placeholder="e-mail">
+        <input type="Text" name="e-mail" placeholder="e-mail" autocomplete="on" size="20" maxlength = "20" autofocus>
         <br><br>
-        <input type="submit" value="submit">
-    </form>
+        <label for="files">Upload documento identificação :</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend align="center">Um pequeno Quizz</legend>
+    <h4>Indique abaixo seu nível de confiança para o <i>QUIZZ</i></h4>
 
-    <h3>Pergunta em aberto</h3>
+    <label for="vol">Deslize a barra para a direita ou esquerda (valores entre 0 e 100):</label>
+    <input type="range" id="vol" value = "0" name="vol" min="0" max="100" oninput="volN.value = parseInt(vol.value)">
+    <output name="vol" for="vol">0</output><br><br>
+    
 
-    <p>Em qual estado brasileiro fica localizado o munícipio de Santa teresa</p>
 
-    <form action="">
+    <h4>Em qual estado brasileiro fica localizado o munícipio de Santa teresa</h4>
+
+   
         <input type="text" name="PerguntaAberta" placeholder="Digite sua resposta aqui"><br><br>
-        <input type="submit" name="submit">
         <input type="reset" name="reset">
 
-    </form>
+    <h4>Quem foram os colonizadores da cidade de Santa Teresa</h4>
 
-    <h3>Radio Pergunta</h3>
-
-    <p>Quem foram os colonizadores da cidade de Santa Teresa</p>
-
-    <form>
 
         <input type="radio" id="Italianos" name="resposta" value="Italianos">
         <label for="Italianos">Italianos</label><br>
@@ -61,15 +69,8 @@
         <label for="Alemães">Alemães</label><br>
         <input type="radio" id="Portugueses" name="resposta" value="Portugueses">
         <label for="Portugueses">Portugueses</label><br><br>
-        <input type="submit" name="submit">
 
-    </form>
-
-    <h3>Checkbox várias escolhas</h3>
-
-    <p>Quais itens fazem parte de vida de quem vive em Santa Teresa</p>
-
-    <form>
+    <h4>Quais itens fazem parte de vida de quem vive em Santa Teresa</h4>
 
         <input type="checkbox" id="perguntaCheckBox1" name="resposta" value="Frio">
         <label for="Italianos">Frio</label><br>
@@ -77,13 +78,8 @@
         <label for="Alemães">Calor</label><br>
         <input type="checkbox" id="perguntaCheckBox3" name="resposta" value="Natureza">
         <label for="Portugueses">Natureza</label><br><br>
-        <input type="submit" name="submit">
-    </form>
-
-
-    <h3>Data pergunta</h3>
-    <p>Em qual periodo chegaram os primeiros imigrantes?</p>
-    <form>
+      
+    <h4>Em qual periodo chegaram os primeiros imigrantes?</h4>
 
         
         <label for="datamin">Selecione o periodo inicial</label>
@@ -91,7 +87,21 @@
         <label for="Alemães">Selecione o periodo Final</label>
         <input type="date" id="perguntaData" name="resposta" max=2021-03-04>
         <br><br>
-        <input type="submit" name="submit">
+
+    <h4>Qual cor representa a temperatura da cidade</h4>
+
+        
+        <label for="favcolor">Selecione apenas um tom de cor:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#00B2EE">
+        <br><br>
+
+
+        
+        <input type="submit" value=" submter" >
+        
+
+        </fieldset>
+
     </form>
 
     
