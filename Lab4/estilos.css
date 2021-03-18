@@ -38,6 +38,10 @@ td {
     color: green;
 }
 
+table {
+    display: inline-block;
+}
+
 li {
     list-style-type: none;
 }
