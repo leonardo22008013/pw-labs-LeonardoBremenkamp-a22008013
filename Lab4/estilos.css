@@ -38,6 +38,10 @@ td {
     color: green;
 }
 
+li {
+    list-style-type: none;
+}
+
 th {
     text-align: center;
     padding: 0px;
