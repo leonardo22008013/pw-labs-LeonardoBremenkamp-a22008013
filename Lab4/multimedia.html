@@ -3,6 +3,7 @@
 
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
     <meta name="author" content="Leonardo Bremenkamp">
     <meta name="keywords" content="Santa Teresa">
@@ -11,59 +12,73 @@
     <!--Web Site criado em html, para fins de treinamento-->
 </head>
 
-<body style="background-color:rgb(235, 253, 244)">
+<style>
 
-    <h1>Santa Teresa</h1>
+</style>
 
-    <img src="images/ST-FAVICON.jpg" alt="Santa Teresa - ES">
-    <br>
-    <a href="index.html">Intro</a>
-    <a href="local.html">Location</a>
-    <a href="multimedia.html">Multimédia</a>
-    <a href="info.html">Informações</a>
-    <a href="../index.html">Home</a>
-    <a href="./quizz.html">Quizz</a>
-    <a href="./comentarios.html">Comentários</a>
+<body>
 
-    <h3> Multimédia </h3>
+    <header>
 
-    <pre>    Primeira imagem tem uma vista da praça principal do município de Santa Teresa, que no inverno tem seu charme, 
+        <h1>Santa Teresa</h1>
+        <img src="images/ST-FAVICON.jpg" alt="Santa Teresa - ES">
+        <br>
+
+    </header>
+
+    <nav>
+        <a href="index.html">Intro</a>
+        <a href="local.html">Location</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informações</a>
+        <a href="../index.html">Home</a>
+        <a href="./quizz.html">Quizz</a>
+        <a href="./comentarios.html">Comentários</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h3> Multimédia </h3>
+
+            <pre>    Primeira imagem tem uma vista da praça principal do município de Santa Teresa, que no inverno tem seu charme, 
             já a segunda mostra um beija-flor bebendo água de um recipiente que é muito utilizado na região.
         </pre>
 
-    <picture>
-        <a href="images/pracaSantaTeresa_grande.jpg" target="foto"><img src="images/pracaSantaTeresa_pequena.jpg"
-                alt="praçaST"></a>
-        <figcaption>Praça Augusto Ruschi</figcaption>
-    </picture>
+            <picture>
+                <a href="images/pracaSantaTeresa_grande.jpg" target="foto"><img src="images/pracaSantaTeresa_pequena.jpg" alt="praçaST"></a>
+                <figcaption>Praça Augusto Ruschi</figcaption>
+                <details>Jardim principal em Santa Teresa</details>
+            </picture>
 
-    <br>
-
-
-    <picture>
-        <a href="images/beijaflores_grande.jpg" target="foto"><img src="images/beija_flores_pequena.jpg"
-                alt="beija-flor"></a>
-        <figcaption>Beija-flor</figcaption>
-    </picture>
-    <br>
-
-    <iframe src="images/beijaflores_grande.jpg" width="800" height="534" name="foto"
-        style="margin: auto;display: block;"></iframe>
-    <br>
+            <br>
 
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWawfBzdNQ8" frameborder="0"
-        style="margin: auto;display: block;"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture "
-        allowfullscreen></iframe>
+            <picture>
+                <a href="images/beijaflores_grande.jpg" target="foto"><img src="images/beija_flores_pequena.jpg" alt="beija-flor"></a>
+                <figcaption>Beija-flor</figcaption>
+                <details>Fotografia registrada em 2005 - artista desconhecido</details>
+            </picture>
+            <br>
 
-    <h1>
-        <center>O carvalho na floresta</center>
-    </h1>
-    <h3>
-        <center>Julio Diniz</center>
-    </h3>
-    <pre><center><i>
+            <iframe src="images/beijaflores_grande.jpg" width="800" height="534" name="foto" style="margin: auto;display: block;"></iframe>
+
+            <br>
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GWawfBzdNQ8" frameborder="0" style="margin: auto;display: block;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+
+        </section>
+
+        <section>
+
+            <h1>
+                <center>O carvalho na floresta</center>
+            </h1>
+            <h3>
+                <center>Julio Diniz</center>
+            </h3>
+            <pre><center><i>
             Havia na floresta um roble cheio de anos,
             Vestido de hera anciã, decano entre os decanos
             Dos bosques do arredor. Raízes colossaiss
@@ -230,6 +245,13 @@
             Sentam-se a conversar. Mas deles, ai, nenhum
             Uma lágrima tem para desgraças destas.
             Homens, que mal vos fez o velho das florestas? </i></center></pre>
+
+        </section>
+
+    </main>
+
+
+    <footer>Leonardo-22008013-ULHT-2021</footer>
 
 </body>
 

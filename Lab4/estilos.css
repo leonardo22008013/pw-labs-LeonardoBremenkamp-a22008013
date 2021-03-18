@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(233, 255, 247);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(17, 17, 17);
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(55, 55, 58);
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(55, 55, 58);
+}
+
+.importante {
+    align-items: center;
+}
+
+.cor {
+    color: gray;
+}
+
+a:link {
+    color: gray;
+    font-size: 1em;
+}
+
+a:visited {
+    color: rgb(243, 176, 176);
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: gray;
+    font-size: 1em;
+}
+
+[target="blank"] {
+    background-color: white;
+    border: 1px solid;
+    font-weight: 100;
+}
