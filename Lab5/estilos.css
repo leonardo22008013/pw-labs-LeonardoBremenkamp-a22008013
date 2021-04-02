@@ -1,0 +1,190 @@
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        background-color: rgb(129, 172, 172);
+        font-family: 'Nunito', sans-serif;
+        color: rgb(50.6, 67.5, 67.5);
+        font-size: 18px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h" "m" "f";
+    }
+    
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        font-size: 45px;
+    }
+    
+    ul,
+    ol,
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(50.6, 67.5, 67.5);
+    }
+    
+    .poem {
+        display: flex;
+        padding-top: 20vh;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .wrapper {
+        padding-left: 10vh;
+    }
+    
+    .l-header {
+        grid-area: h;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 3%;
+        background-color: rgb(57, 122, 122);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .l-nav {
+        display: flex;
+    }
+    
+    .l-nav ul li {
+        margin: 0px;
+        padding: 0;
+    }
+    
+    .l-nav ul li a {
+        font-size: 18px;
+        margin: 0;
+        padding: 5px;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .l-nav ul li a:hover {
+        background-color: rgb(219, 239, 239);
+    }
+    
+    .l-nav ul li a:visited {
+        background-color: rgb(31, 85, 85);
+    }
+    
+    .l-main {
+        display: grid;
+        grid-template-areas: "s1 s2";
+        margin: 0 4%;
+        grid-template-columns: 50%;
+        grid-area: m;
+    }
+    
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 0.5rem 1rem;
+        grid-template-areas: "f1" "f2" "f3" "f4" "f5 f5";
+        padding: 15vh 15vh;
+        grid-area: s1;
+        background-color: rgb(170, 212, 212);
+    }
+    
+    .fotos,
+    img {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .fotos1 {
+        grid-area: "f1";
+    }
+    
+    .fotos2 {
+        grid-area: "f2";
+    }
+    
+    .fotos3 {
+        grid-area: "f3";
+    }
+    
+    .fotos4 {
+        grid-area: "f4";
+    }
+    
+    .fotos5 {
+        grid-area: "f5";
+    }
+    
+    .fotos h3,
+    p {
+        text-align: center;
+    }
+    
+    .intro {
+        display: flex;
+        padding: 18vh 15vh;
+        grid-area: s1;
+        border-right: solid;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(170, 212, 212);
+        text-align: center;
+    }
+    
+    .subsection {
+        display: flex;
+        padding-top: 30vh;
+        justify-content: space-around;
+        grid-area: s2;
+        background-color: rgb(75, 134, 134);
+    }
+    
+    .map {
+        display: grid;
+        padding-top: 30vh;
+        justify-content: space-around;
+        grid-area: s2;
+        background-color: rgb(75, 134, 134);
+    }
+    
+    .map iframe {
+        width: 500px;
+        height: 300px;
+        border: none;
+    }
+    
+    .intro ol li {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        text-align: center;
+    }
+    
+    .intro h3 {
+        font-size: 30px;
+    }
+    
+    .l-footer {
+        grid-area: f;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        margin: 0px;
+        padding: 10px;
+        font-style: italic;
+        background-color: rgb(101, 155, 155);
+    }
